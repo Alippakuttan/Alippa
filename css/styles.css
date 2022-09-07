@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+:root {
+  --green: rgb(146, 208, 80);
+  --blue: rgb(0, 176, 240);
+  --yellow: rgb(255, 255, 0);
+  --black: rgb(0, 0, 0);
+}
+
+#title {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+.title-img {
+  width: 40vw;
+  height: 100vh;
+  position: relative;
+  overflow: visible;
+}
+
+.title-img object {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.5));
+}
+
+.title-img div {
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.title-blue {
+  background-color: var(--blue);
+  bottom: -100px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+}
+
+.title-yellow {
+  background-color: var(--yellow);
+  top: -250px;
+  left: -100px;
+  width: 700px;
+  height: 600px;
+}
+
+.title-green {
+  background-color: var(--green);
+  bottom: -250px;
+  right: -500px;
+  width: 800px;
+  height: 800px;
+}
+
+.title-text {
+  width: 60vw;
+  height: 100vh;
+  background-color: #111;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.title-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: 'EB Garamond';
+  font-size: 5rem;
+}
+
+.title-text h2 {
+  font-family: 'Bad Script';
+  font-size: 2rem;
+}
+
+#click {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

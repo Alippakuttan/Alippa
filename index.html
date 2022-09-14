@@ -10,11 +10,16 @@
     <title>Alippa</title>
   </head>
   <body>
+    <div class="sidebar sidebar-dark">
+      <div class="sidebar-dot" data-page="title"></div>
+      <div class="sidebar-dot" data-page="testimonials"></div>
+      <div class="sidebar-dot" data-page="Trust"></div>
+    </div>
     <nav>
-      <h4><img src="AlippaLogo.svg">Alippa</h4>
+      <h4><object data="AlippaLogo.svg"></object>Alippa</h4>
       <button type="button" name="button">Contact</button>
     </nav>
-    <section id="title">
+    <section id="title" data-section-index="1">
       <div class="title-img">
         <div class="title-green"></div>
         <div class="title-blue"></div>
@@ -29,7 +34,7 @@
       </div>
     </section>
 
-    <section id="testimonials">
+    <section id="testimonials" data-section-index="2">
       <h2>TESTIMONIALS</h2>
       <hr>
       <h3 class="testimonial-h3">See what people say</h3>
@@ -58,7 +63,7 @@
       </div>
     </section>
 
-    <section id="Trust">
+    <section id="Trust" data-section-index="3">
       <h2>"The Sky is the Limit"</h2>
       <h3>Companies Who Trust Me</h3>
       <div class="companies">
